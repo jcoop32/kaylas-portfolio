@@ -1,0 +1,35 @@
+- one page with different sections
+- one page with all projects/pics
+- logos with links to social media and email address
+
+
+- need nav bar to be sticky
+- divs for each section with ids
+- once user clicks a section on nav bar they will be moved down to selected section via <a> href id
+
+LAYOUT
+
+navbar:
+-about me, resume, portfolio, contact
+-needs to be sticky; move with user
+
+title: name
+header: slogan or something intereting
+
+sections:
+- about me
+-- picture, content
+
+- resume
+--work history, maybe education - not needed
+
+-portfolio
+-- four of best pics grid view
+---will be responsive for mobile
+----start at 2x2 for desktop, 1x4 for mobile
+-----show page with description and closer look at image???
+
+-contact
+--social media icons with <a> links
+--email printed, mailto attr
+---maybe add form??
