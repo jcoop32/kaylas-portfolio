@@ -1,0 +1,16 @@
+<%- include('../partials/header.ejs')%>
+
+<h2>All my work</h2>
+
+<div class="container d-flex justify-center">
+    <% for (let i = 0; i < work.length; i++){%>
+        <div>
+
+            <!-- add table for grid effect -->
+            <img src="<%=work[i].img%>" class="design-img">
+        </div>
+        <br>
+    <%} %>
+</div>
+
+<%- include('../partials/footer.ejs')%>
