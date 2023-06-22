@@ -7,7 +7,7 @@ a {
   color: #00B7FF;
 }
 
-#front-page-section, #about-me-section{
+.main-pg-section{
   width: 100%;
   height: 700px;
   border: 1px solid black;
