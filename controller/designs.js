@@ -6,7 +6,7 @@ module.exports = {
 
 async function index(req, res) {
   try {
-    const alldesigns = await Design.getAll();
+    const alldesigns = await Design.createDesign();
     res.render('designs/index', {
       work: alldesigns,
       title: 'Designs',
