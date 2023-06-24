@@ -28,3 +28,7 @@ a {
 .design-img:hover {
   box-shadow: 3px 3px 10px gray;
 }
+
+#empty-container {
+  height: 30px;
+}
