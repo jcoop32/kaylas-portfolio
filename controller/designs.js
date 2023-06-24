@@ -9,7 +9,7 @@ async function index(req, res) {
     const alldesigns = await Design.createDesign();
     res.render('designs/index', {
       work: alldesigns,
-      title: 'Designs',
+      title: 'Portfolio',
     });
   } catch (err) {
     console.log(err.message);

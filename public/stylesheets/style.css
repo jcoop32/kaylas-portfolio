@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  /* background-color: #b2ccdf !important; */
 }
 
 a {
@@ -14,9 +15,9 @@ a {
 }
 
 #frontpg-img {
-  border: 1px solid black;
-  height: 350px;
-  width: 250px;
+  /* border: 1px solid sblack; */
+  width: 100%;
+  height: 600px;
 }
 
 .design-img {
@@ -29,9 +30,22 @@ a {
   box-shadow: 3px 3px 10px gray;
 }
 
+.top-three {
+  width: 100%;
+  height: 100%;
+}
+.top-three:hover {
+  box-shadow: 3px 3px 10px gray;
+}
+
 #empty-container {
   height: 30px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .design-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
 }
