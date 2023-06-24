@@ -1,9 +1,25 @@
 <%- include('../partials/header.ejs')%>
 <div id="empty-container"></div>
+<a href="/designs" class="container"><img src="/images/arrow-left.svg" /></a>
 <div class="d-flex flex-wrap justify-content-center text-center container">
-  <a href="/designs">Back</a>
+  <% if (work.id > 1 && work.id < 25){%>
+  <a href="/designs/<%=work.id - 1%>"
+    ><button class="btn btn-secondary m-3">Back</button>
+  </a>
+  <a href="/designs/<%=work.id + 1%>"
+    ><button class="btn btn-primary m-3">Next</button></a
+  >
+  <%} %> <% if (work.id === 1){%>
+  <a href="/designs/<%=work.id + 1%>"
+    ><button class="btn btn-primary m-3">Next</button></a
+  >
+  <%} %> <% if (work.id === 25){%>
+  <a href="/designs/<%=work.id - 1%>"
+    ><button class="btn btn-secondary m-3">Back</button>
+  </a>
+  <%} %>
   <div class="container">
-    <img class="" src="<%=work.img%>" />
+    <img class="show-img" src="<%=work.img%>" />
   </div>
 </div>
 

@@ -26,6 +26,11 @@ a {
   overflow: hidden;
 }
 
+.show-img {
+  width: 75%;
+  height: 100%;
+}
+
 .design-img:hover {
   box-shadow: 3px 3px 10px gray;
 }
