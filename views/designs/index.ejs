@@ -2,15 +2,17 @@
 
 <h2>All my work</h2>
 
-<div class="container d-flex justify-center">
-    <% for (let i = 0; i < work.length; i++){%>
-        <div>
+<div class="d-flex flex-wrap justify-content-center">
+  <% for (let i = 0; i < work.length; i++){%>
+  <div class="m-1">
+    <!-- add table for grid effect -->
+    <a href="/designs/<%=work[i].id%>"
+      ><img src="<%=work[i].img%>" class="design-img"
+    /></a>
+  </div>
 
-            <!-- add table for grid effect -->
-            <img src="<%=work[i].img%>" class="design-img">
-        </div>
-        <br>
-    <%} %>
+  <br />
+  <%} %>
 </div>
 
 <%- include('../partials/footer.ejs')%>
